@@ -1,6 +1,6 @@
 # Console-based Personal Finance Tracker
-A command-line application for managing personal finances. Users can add income and expense transactions, categorise them, view a summary of their financial status, and save/load their data from a file. 
-A simple, single-file C++ console application to track **income** and **expenses**, summarise totals, search transactions, and generate **monthly reports**. Data is persisted in a plain-text file so your records survive between runs.
+- A command-line application for managing personal finances. Users can add income and expense transactions, categorise them, view a summary of their financial status, and save/load their data from a file. 
+- A simple, single-file C++ console application to track **income** and **expenses**, summarise totals, search transactions, and generate **monthly reports**. Data is persisted in a plain-text file so your records survive between runs.
 
 > ✅ No external libraries.  
 > ✅ Works on Windows, Linux, and macOS (C++17).  
@@ -50,27 +50,6 @@ FinanceTracker.exe
 g++ -std=c++17 -O2 -o finance_tracker main.cpp
 ./finance_tracker
 ```
-
-### With CMake (optional)
-Create a minimal `CMakeLists.txt` if you prefer CMake:
-
-```cmake
-cmake_minimum_required(VERSION 3.12)
-project(PersonalFinanceTracker CXX)
-set(CMAKE_CXX_STANDARD 17)
-add_executable(finance_tracker main.cpp)
-```
-
-Then:
-```bash
-mkdir build && cd build
-cmake ..
-cmake --build .
-./finance_tracker   # or .\Debug\finance_tracker.exe on Windows/MSVC
-```
-
-> Replace `main.cpp` with your actual filename if different.
-
 ---
 
 ## ▶️ Usage
@@ -183,13 +162,3 @@ Transaction added successfully!
 - **Unicode/locale issues.** Stick to ASCII in descriptions if your terminal doesn’t support your locale.
 
 ---
-
-## 📜 License
-
-MIT — do what you want, just keep the copyright and license in your repo.
-
----
-
-## 🙌 Acknowledgements
-
-Built with standard C++ STL and lots of ❤️ for simple, auditable tooling.
